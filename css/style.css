@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Criando variáveis no CSS para ser utilizada e fácil manutenção */
+:root {
+    --preto: rgb(63, 63, 63);
+    --branco: white;
+    --verde: rgb(191, 244, 226);
+}
+
+/*estilizando o header da página*/
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 0 0 10px var(--preto);
+}
+@media (max-width:650px){
+    .cabecalho {
+        flex-direction: column;
+        background-color: var(--preto);
+        color: var(--branco);
+    }
+}
+.logo-menu {
+    display: flex;
+}
+
+.logo-menu>img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu>li {
+    padding: 10px;
+}
+
+.botoes-menu {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--preto);
+    font-weight: 600;
+}
+
+.botao-branco {
+    border: 2px solid var(--preto);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.botao-preto {
+    background-color: var(--preto);
+    color: var(--branco);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* Estilizando o Main (Corpo principal da pg) */
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+main>img {
+    width: 100%;
+}
+
+.card1 {
+    background-color: var(--verde);
+    text-align: center;
+    padding: 20px 20%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card1>p {
+    margin-bottom: 20px;
+}
+
+.card-imagem {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.card-imagem>img {
+    width: 50%;
+}
+
+.card-imagem>div {
+    background-color: var(--verde);
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/*Estilizando rodapé*/
+
+footer{
+    border-top: 2px solid gray;
+    width: 100%;
+    font-size: smaller;
+}
+.icones{
+    display: flex;
+    justify-content: center;
+}
+.lista1{
+    display: flex;
+    justify-content: center;
+
+}
+.lista1 > ul{
+    margin: 20px 20px ;
+}
